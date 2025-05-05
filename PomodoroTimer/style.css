@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  color: #d62828;
+  margin-bottom: 10px;
+}
+
+.mode {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.timer-ring {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px;
+}
+
+svg {
+  width: 180px;
+  height: 180px;
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+  r: 85;
+  cx: 90;
+  cy: 90;
+}
+
+circle:first-child {
+  stroke: #eee;
+}
+
+#progress {
+  stroke: #28a745;
+  stroke-dasharray: 534;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #333;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+
+#start { background: #28a745; }
+#pause { background: #ffc107; }
+#reset { background: #dc3545; }
+
+p {
+  margin-top: 15px;
+  color: #555;
+}

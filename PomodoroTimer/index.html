@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Real Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍅 Pomodoro Timer</h1>
+    
+    <div class="mode">
+      <span id="sessionType">Work</span> Session
+    </div>
+
+    <div class="timer-ring">
+      <svg>
+        <circle cx="90" cy="90" r="85"></circle>
+        <circle cx="90" cy="90" r="85" id="progress"></circle>
+      </svg>
+      <div class="time" id="time">25:00</div>
+    </div>
+
+    <div class="buttons">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+
+    <p>Completed Sessions: <span id="sessionCount">0</span></p>
+
+    <audio id="beep" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
